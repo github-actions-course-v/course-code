@@ -1,6 +1,9 @@
 name: Repository Events
 on:
     push:
+        branches:
+            - main
+            - 'features/*'
     pull_request:
         types: [opened, assigned,  reopened]
     issues:
